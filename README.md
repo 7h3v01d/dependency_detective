@@ -4,6 +4,23 @@
 
 Dependency Detective is a powerful, modern command-line tool that **automatically discovers**, **resolves**, **installs**, and **manages** the third-party dependencies your Python project actually uses — **without you ever having to manually maintain a `requirements.txt` file again**.
 
+⚠️ **LICENSE & USAGE NOTICE — READ FIRST**
+
+This repository is **source-available for private technical evaluation and testing only**.
+
+- ❌ No commercial use  
+- ❌ No production use  
+- ❌ No academic, institutional, or government use  
+- ❌ No research, benchmarking, or publication  
+- ❌ No redistribution, sublicensing, or derivative works  
+- ❌ No independent development based on this code  
+
+All rights remain exclusively with the author.  
+Use of this software constitutes acceptance of the terms defined in **LICENSE.txt**.
+
+---
+
+
 It scans your codebase using proper **AST parsing** (not brittle regex), intelligently maps top-level imports to real PyPI package names (even for tricky ones like `cv2` → `opencv-python`, `bs4` → `beautifulsoup4`, `PIL` → `Pillow`, etc.), excludes standard library & local modules, queries PyPI for latest versions when needed, and gives you multiple powerful workflows:
 
 - Generate clean, version-pinned `requirements.txt`
